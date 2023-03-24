@@ -1,1 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#2e92d0;
+    color: rgb(0, 0, 0);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
 
+nav {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#Samples {
+    width: 75%;
+    height: 75%;
+}
+
+.intro, .featured-projects {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* for images gallery */
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.meme {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
